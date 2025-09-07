@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
@@ -15,7 +15,7 @@
     "remark": "^15.0.1",
     "remark-html": "^16.0.1"
   },
-  
+  "devDependencies": {
     "@types/node": "^20.14.8",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",

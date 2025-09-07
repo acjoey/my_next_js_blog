@@ -94,6 +94,7 @@ const Switch = () => {
 
 const Script = memo(() => (
   <script
+    suppressHydrationWarning
     dangerouslySetInnerHTML={{
       __html: `(${NoFOUCScript.toString()})('${STORAGE_KEY}')`,
     }}
@@ -105,9 +106,9 @@ const Script = memo(() => (
  */
 export const ThemeSwitcher = () => {
   return (
-    <>
+    <div suppressHydrationWarning>
       <Script />
       <Switch />
-    </>
+    </div>
   );
 };
