@@ -22,7 +22,7 @@ export function PostPreview({
   slug,
 }: Props) {
   return (
-    <div>
+    <div className="transition-transform duration-300 hover:scale-[1.02] hover:shadow-md rounded-lg overflow-hidden animate-fadeIn">
       <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
